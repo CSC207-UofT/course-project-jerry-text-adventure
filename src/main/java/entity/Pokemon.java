@@ -6,7 +6,7 @@ public class Pokemon extends BasePokemon implements Serializable {
     private int level;
     private int experiencePoint;
     private int hitPoint;
-    private PokemonData pokemonData;
+    private final PokemonData pokemonData;
 
     public Pokemon(String name, BasePokemonData basePokemonData, int level, int experiencePoint, int hitPoint,
                    PokemonData pokemonData) {
@@ -43,10 +43,6 @@ public class Pokemon extends BasePokemon implements Serializable {
 
     public PokemonData getPokemonData() {
         return pokemonData;
-    }
-
-    public void setPokemonData(PokemonData pokemonData) {
-        this.pokemonData = pokemonData;
     }
 
     @Override
